@@ -1,9 +1,9 @@
-const cacheName = "Xex-PAWTestTemplate-1.0";
+const cacheName = "XEX-XEX-Game-0.1.9.9";
 const contentToCache = [
-    "Build/BuildTest.loader.js",
-    "Build/BuildTest.framework.js",
-    "Build/BuildTest.data",
-    "Build/BuildTest.wasm",
+    "Build/MechTest.loader.js",
+    "Build/MechTest.framework.js",
+    "Build/MechTest.data",
+    "Build/MechTest.wasm",
     "TemplateData/style.css"
 
 ];
