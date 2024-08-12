@@ -1,15 +1,58 @@
 {
-    "name": "XEX-Game",
-    "short_name": "XEX-Game",
-    "start_url": "index.html",
+    "name": "Xverse-Beta",
+    "short_name": "Xverse",
+    "description": "Xverse",
+    "start_url": "/?utm_source=home-page",
     "display": "fullscreen",
-    "background_color": "#231F20",
-    "theme_color": "#000",
-    "description": "",
-    "icons": [{
-      "src": "TemplateData/icons/xex-logo.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }]
-  }
+    "background_color": "#08000f",
+    "theme_color": "#b36276",
+    "orientation": "portrait",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "lang": "en-US",
+    "dir": "auto",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "TemplateData/icons/icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "TemplateData/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
