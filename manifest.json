@@ -5,7 +5,7 @@
     "start_url": "/xex-game-pwa-test?utm_source=home-pwa",
     "display": "fullscreen",
     "background_color": "#08000f",
-    "theme_color": "#b36276",
+    "theme_color": "#000",
     "orientation": "portrait",
     "display_override": [
         "window-controls-overlay"
