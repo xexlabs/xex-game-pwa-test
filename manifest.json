@@ -2,7 +2,7 @@
     "name": "Xverse-Beta",
     "short_name": "Xverse",
     "description": "Xverse",
-    "start_url": "/?utm_source=home-page",
+    "start_url": "/xex-game-pwa-test?utm_source=home-pwa",
     "display": "fullscreen",
     "background_color": "#08000f",
     "theme_color": "#b36276",
