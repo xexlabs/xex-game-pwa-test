@@ -86,7 +86,8 @@
 						warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
 					}
 
-					var div = document.createElement('div');
+ 
+       					var div = document.createElement('div');
 					div.innerHTML = msg;
 					warningBanner.appendChild(div);
 					if (type == 'error') {
@@ -104,49 +105,48 @@
 					updateBannerVisibility();
 				}
 
-				var buildUrl = "Build";
-				var loaderUrl = buildUrl + "/MechTest.loader.js";
-				var config = {
-					dataUrl: buildUrl + "/MechTest.data",
-					frameworkUrl: buildUrl + "/MechTest.framework.js",
-					codeUrl: buildUrl + "/MechTest.wasm",
-					streamingAssetsUrl: "StreamingAssets",
-					companyName: "XEX",
-					productName: "Xverse-Beta",
-					productVersion: "0.1.24",
-					showBanner: unityShowBanner,
-				};
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Xex Cryptogame Build-V(0.1.25) 03-03-2025.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/Xex Cryptogame Build-V(0.1.25) 03-03-2025.data",
+        frameworkUrl: buildUrl + "/Xex Cryptogame Build-V(0.1.25) 03-03-2025.framework.js",
+        codeUrl: buildUrl + "/Xex Cryptogame Build-V(0.1.25) 03-03-2025.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "XEX",
+        productName: "XEX-Game",
+        productVersion: "0.1.25",
+        showBanner: unityShowBanner,
+      };
 
-				// By default Unity keeps WebGL canvas render target size matched with
+     				// By default Unity keeps WebGL canvas render target size matched with
 				// the DOM size of the canvas element (scaled by window.devicePixelRatio)
 				// Set this to false if you want to decouple this synchronization from
 				// happening inside the engine, and you would instead like to size up
 				// the canvas DOM size and WebGL render target sizes yourself.
 				// config.matchWebGLToCanvasSize = false;
 
-				if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-					// Mobile device style: fill the whole browser client area with the game canvas:
-					var meta = document.createElement('meta');
-					meta.name = 'viewport';
-					meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-					document.getElementsByTagName('head')[0].appendChild(meta);
-				}
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
 
-				loadingBar.style.display = "block";
+      loadingBar.style.display = "block";
 
-				var script = document.createElement("script");
-				script.src = loaderUrl;
-				script.onload = () => {
-					createUnityInstance(canvas, config, (progress) => {
-						progressBarFull.style.width = 100 * progress + "%";
-					}).then((unityInstance) => {
-						loadingBar.style.display = "none";
-					}).catch((message) => {
-						alert(message);
-					});
-				};
-				document.body.appendChild(script);
-			}
-		</script>
-	</body>
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+  </body>
 </html>
