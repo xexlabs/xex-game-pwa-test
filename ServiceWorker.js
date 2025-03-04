@@ -1,11 +1,10 @@
-const cacheName = "XEX-XEX-Game-0.1.25";
+const cacheName = "XEX-XEX-Game-0.1.24";
 const contentToCache = [
-    "Build/Xex Cryptogame Build-V(0.1.25) 03-03-2025.loader.js",
-    "Build/Xex Cryptogame Build-V(0.1.25) 03-03-2025.framework.js",
-    "Build/Xex Cryptogame Build-V(0.1.25) 03-03-2025.data",
-    "Build/Xex Cryptogame Build-V(0.1.25) 03-03-2025.wasm",
+    "Build/MechTest.loader.js",
+    "Build/MechTest.framework.js",
+    "Build/MechTest.data",
+    "Build/MechTest.wasm",
     "TemplateData/style.css"
-
 ];
 
 self.addEventListener('install', function (e) {
